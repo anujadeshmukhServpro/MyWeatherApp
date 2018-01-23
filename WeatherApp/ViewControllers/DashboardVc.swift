@@ -12,7 +12,7 @@ import UIKit
 // controller -> calles model city model -> city model will call -> Api class
 // controller <- city model returns response <- Api  returns response
 
-//chan
+
 
 
 class DashboardVc: UIViewController,UITableViewDelegate, UITableViewDataSource, JsonObjectDelegate {
