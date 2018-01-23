@@ -21,7 +21,7 @@ class DashboardVc: UIViewController,UITableViewDelegate, UITableViewDataSource, 
     let jsonObj = JsonClass()
     var CityObj = CityInfo()
     var count : NSInteger = 0
-    let arrCityInfo :NSMutableArray = []
+    var arrCityInfo :NSMutableArray = []
     var arrId :NSArray = []
     var hud = MBProgressHUD()
     
@@ -44,6 +44,7 @@ class DashboardVc: UIViewController,UITableViewDelegate, UITableViewDataSource, 
     {
         // To fetch data from API
         count = 0
+        arrCityInfo = []
         hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         
         hud.label.text = "Please wait data is loading..."
